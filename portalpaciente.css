@@ -1,0 +1,156 @@
+/***************************   Section 1   ***************************/
+
+.portal {
+  height: 400px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.portal img {
+  width: 100%;
+  height: 400px;
+  /* opacity: 0.8; */
+}
+
+.portal__tittle {
+  color: #fff;
+  margin: -250px 0px 0px 100px;
+  width: 700px;
+  /* opacity: 0.9; */
+}
+
+.tittle--port {
+  font-size: 40px;
+}
+
+.subtittle--port {
+  font-size: 20px;
+}
+
+/***************************   Section 2   ***************************/
+
+.main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+  margin: 40px 100px 50px;
+}
+
+/***************************   Main 1   ***************************/
+
+.main1 p {
+  color: teal;
+  margin-top: 30px;
+  text-align: justify;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+
+.main1 p span {
+  color: rgb(20, 95, 95);
+  font-weight: bold;
+}
+
+/***************************   Main 2   ***************************/
+
+.main2 input {
+  color: teal;
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid #045874;
+  background: #eee;
+}
+
+.main2 input::placeholder {
+  color: teal;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.main2 input:hover {
+  background: #ddd;
+}
+
+.main2 input:focus {
+  border: 3px solid #045874;
+}
+
+.main2 input[type="submit"] {
+  width: 100px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.main .btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main2 input[type="reset"] {
+  width: 100px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.main2 input[type="submit"]:hover,
+.main2 input[type="reset"]:hover {
+  background: teal;
+  color: #fff;
+}
+.main2 input[type="submit"]:active,
+.main2 input[type="reset"]:active {
+  background-color: rgb(7, 163, 163);
+  transition: 0.2s ease;
+}
+
+.main2 a {
+  color: teal;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*******************************************   MEDIA QUERYS   *******************************************/
+
+@media (max-width: 916px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .portal__tittle {
+    margin: -250px 30px 0px 30px;
+  }
+  .tittle--port {
+    font-size: 35px;
+  }
+  .subtittle--port {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 736px) {
+  .portal__tittle {
+    width: 500px;
+    margin: -250px 20px 0px 20px;
+  }
+  .tittle--port {
+    font-size: 25px;
+  }
+  .subtittle--port {
+    font-size: 18px;
+  }
+  .main1 p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 516px) {
+  .portal__tittle {
+    width: 400px;
+    margin: -250px 10px 0px 10px;
+  }
+}

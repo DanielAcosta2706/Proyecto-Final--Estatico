@@ -1,0 +1,104 @@
+body {
+  background: #212121;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.container {
+  background: #eee;
+  width: 400px;
+  height: 500px;
+  border-radius: 5px;
+}
+
+.container img {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.tittle {
+  /* background: red; */
+  height: 100px;
+}
+
+.tittle1 {
+  color: teal;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.subtittle {
+  color: teal;
+  font-size: 15px;
+  text-align: center;
+  margin-top: -20px;
+}
+
+.container h3 {
+  color: teal;
+  text-align: center;
+  margin-top: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.container input {
+  color: teal;
+  position: relative;
+  width: 90%;
+  margin: 10px 20px;
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid #045874;
+  background: #eee;
+}
+
+.container input::placeholder {
+  color: teal;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.container input:hover {
+  background: #ddd;
+}
+
+.container input:focus {
+  border: 3px solid #045874;
+}
+
+.container input[type="submit"] {
+  color: #fff;
+  width: 150px;
+  cursor: pointer;
+  margin: 20px 25px;
+  background: teal;
+}
+
+.container input[type="reset"] {
+  position: absolute;
+  color: #fff;
+  width: 150px;
+  cursor: pointer;
+  margin: 20px 20px;
+  background: teal;
+}
+
+.container input[type="submit"]:hover,
+.container input[type="reset"]:hover {
+  background: #045874;
+}
+.container input[type="submit"]:active,
+.container input[type="reset"]:active {
+  background-color: rgb(7, 163, 163);
+  transition: 0.3s ease;
+}
+
+.container a {
+  color: teal;
+  text-decoration: none;
+  font-weight: bold;
+}

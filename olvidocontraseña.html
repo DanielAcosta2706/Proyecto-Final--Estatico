@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olvido Contraseña</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="shortcut icon" href="img/logop.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/74c931cf01.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="olvidocontraseña.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="img/logo.jpg" alt="" />
+      <div class="tittle">
+        <h1 class="tittle1">Sanatorio Margarita</h1>
+        <h2 class="subtittle">COMPROMETIDOS CON TU BIENESTAR</h2>
+      </div>
+      <hr />
+      <h3>Restablecer Contraseña</h3>
+      <form action="">
+        <input
+          type="list"
+          list="documento"
+          placeholder="Tipo de documento"
+          required
+        />
+        <datalist id="documento">
+          <option value="DNI"></option>
+          <option value="LC"></option>
+          <option value="LE"></option>
+          <option value="CI"></option>
+          <option value="PASAPORTE"></option>
+        </datalist>
+        <input
+          type="text"
+          placeholder="Ingrese su numero de documento"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Ingrese su correo electronico"
+          required
+        />
+        <input type="submit" value="Restablecer" />
+        <input type="reset" value="Cancelar" />
+      </form>
+    </div>
+  </body>
+</html>
